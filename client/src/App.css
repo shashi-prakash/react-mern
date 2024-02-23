@@ -1,0 +1,202 @@
+a{
+  list-style: none;
+  text-decoration: none;
+}
+.homepage{
+  width: 100%;
+  box-shadow: 0 0 15px 5px grey;
+  position: relative;
+  border-radius: 6px;
+}
+.homepage h1{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  align-items: center !important;
+}
+.homepage button{
+  background-color: white;
+  width: 30%;
+  color: #f44336;
+}
+/* 
+* {box-sizing: border-box} */
+
+/* Full-width input fields */
+  input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none !important;
+}
+
+.form-control{
+  outline: none !important;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  position: relative;
+  
+}
+
+.InnereContainer{
+  position: absolute;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  width: 40%;
+  padding: 40px;
+  background-color: #f1f1f1;
+  
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.login-option{
+  text-align: center;
+}
+.login-option a{
+  color: #f44336;
+  cursor: pointer;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+  .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #6fcb9f;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+  }
+
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: aquamarine;
+  color: black;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+   padding: 0 10px;
+}
+.navbar-center-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5em;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.chart-item{
+  display: flex;
+  flex-direction: row;
+}
+ .left-item, .right-item{
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  border: 1px solid red;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 600px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+  .container{
+    padding: 10px !important;
+  }
+  .InnereContainer{
+    position: relative !important;
+    width: 100% !important;
+    padding: 20px 10px !important;
+    background-color: white !important;   
+  }
+  input[type=text], input[type=password], input[type=email] {
+    background: #f1f1f1 !important;
+  }
+  .navbar-center-item{
+    display: inline;
+  }
+}
